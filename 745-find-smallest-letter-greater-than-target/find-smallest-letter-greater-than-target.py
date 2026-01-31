@@ -1,7 +1,6 @@
 class Solution:
     def nextGreatestLetter(self, letters: List[str], target: str) -> str:
         for i in letters:
-            # print(f"{i},{target} = {ord(i) - ord(target)}")
             if ord(i) - ord(target) > 0:
                 return i
                 break
